@@ -40,6 +40,8 @@ def is_available_to_order(menus, orders):
     else:
         result = False
     return result
+# 이분탐색이 모든 경우에 효율적인 방법은 아니다!@!
+# 튜터님은 set을 활용
 
 
 result = is_available_to_order(shop_menus, shop_orders)
