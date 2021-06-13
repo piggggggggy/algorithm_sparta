@@ -28,7 +28,7 @@ class MaxHeap:
                 elif self.items[j*2+1] > self.items[j*2] and self.items[j*2+1] > self.items[j]:
                     self.items[j], self.items[j*2+1] = self.items[j*2+1], self.items[j]
                 elif self.items[j] > self.items[j*2] and self.items[j] > self.items[j*2+1]:
-                    break   
+                    break
                 j += 1
 
         return del_node
