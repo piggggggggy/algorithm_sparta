@@ -6,6 +6,7 @@ def d(a):
     for i in b:
         c += int(i)
     return a+c
+
 num = []
 nums = range(1,10000)
 for i in nums:
