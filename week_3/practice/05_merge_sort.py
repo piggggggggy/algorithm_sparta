@@ -1,8 +1,8 @@
-array = [5, 3, 2, 1, 6, 8, 7, 4]
+array = [1,3,8,-2,2]
 
 
 def merge_sort(array):
-    # 이 곳을 채워보세요!
+
     if len(array) <= 1:
         return array
     mid = len(array) // 2

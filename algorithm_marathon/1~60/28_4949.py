@@ -14,35 +14,40 @@ for j in data:
     check_list = []
     count = 0
     for k in j:
-        count += 1
         if k =='(':
             check_list.append('(')
+            count += 1
         elif k == '[':
             check_list.append('[')
+            count += 1
         elif k == ')':
-            if len(check_list) == 0:
-                print('NO')
-                break
-            else:
-                if check_list.pop() == '(':
+            if len(check_list) > 0:
+                if check_list.pop() != '[':
+                    count += 1
                     continue
                 else:
                     print('NO')
                     break
+            else:
+                print('NO')
+                break
         elif k == ']':
-            if len(check_list) == 0:
-                print('NO')
-                break
-            else:
-                if check_list.pop() == '[':
+            if len(check_list) > 0:
+                if check_list.pop() != '(':
+                    count += 1
                     continue
                 else:
                     print('NO')
                     break
+            else:
+                print('NO')
+                break
+        else:
+            count += 1
     if len(check_list) == 0 and count == len(j):
         print('YES')
 
-
+# 왜 틀려 ㅅㅂ!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
     # check_list = []
     # count = 0

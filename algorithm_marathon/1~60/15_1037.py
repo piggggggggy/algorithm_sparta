@@ -4,3 +4,5 @@ N = int(input())
 
 list = list(map(int, input().split()))
 
+real_num = max(list) * min(list)
+print(real_num)
