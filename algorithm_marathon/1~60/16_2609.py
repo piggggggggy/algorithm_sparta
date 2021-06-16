@@ -15,6 +15,17 @@ for k in range(B, 0, -1):
 set_a = set(a_list)
 set_b = set(b_list)
 max_ab = max(set_a & set_b)
+
+a = A//max_ab
+b = B//max_ab
+
+min_ab = max_ab * a * b
+print(max_ab)
+print(min_ab)
+
+
+#### 정답!
+
 # max_ab = 0
 # if A > B:
 #     for i in b_list:
@@ -27,13 +38,3 @@ max_ab = max(set_a & set_b)
 #             max_ab = i
 #             break
 # 반복문보다 set이 좋을 때가 있다. 이게 더 느림
-
-a = A//max_ab
-b = B//max_ab
-
-min_ab = max_ab * a * b
-print(max_ab)
-print(min_ab)
-
-
-#### 정답!

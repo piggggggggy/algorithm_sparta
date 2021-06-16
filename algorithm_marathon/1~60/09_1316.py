@@ -10,6 +10,7 @@ for n in range(num):
             if text[i+1] not in alph_list:
                 alph_list.append(text[i+1])
             else:
+
                 count += 1
                 break
 

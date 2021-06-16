@@ -1,12 +1,13 @@
-# import sys
-#
-# data = []
-# while True:
-#     dd = sys.stdin.readline().strip()
-#     if dd == '.':
-#         break
-#     data.append(dd)
 
-a = 100
 
-print(a % 1)
+
+
+a = [1,2,3,4,5]
+
+b = [4,3,7]
+
+
+c = list(set(a) - set(b))
+
+print(c)
+

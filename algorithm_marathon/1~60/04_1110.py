@@ -9,7 +9,7 @@ while True:
         if a + a < 10:
             a = a * 10 + a
         else:
-            a = a * 10 + (a) % 10
+            a = a * 10 + a % 10
     else:
         b = a % 10 + a // 10
         if b < 10:
