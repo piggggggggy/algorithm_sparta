@@ -5,6 +5,6 @@ for i in range(n):
     scores = list(map(int, input().split()))
     nn = scores.pop(0)
     avg = sum(scores)/nn
-    avgup = [j for j in scores if j > avg]
-    result = len(avgup)/nn
+    avg_up = [j for j in scores if j > avg]
+    result = len(avg_up)/nn
     print('%.3f' % round(result*100, 3)+'%')

@@ -2,23 +2,26 @@
 
 N = int(input())
 result = 0
-list = []
+lst = []
+
+
 for i in range(N//5, 0, -1):
-    if (N - 5*(i)) % 3 == 0:
-        result = i + (N - 5*(i))//3
-        list.append(result)
+    if (N - 5*i) % 3 == 0:
+        result = i + (N - 5*i)//3
+        lst.append(result)
+
 if N % 3 == 0:
-    list.append(N//3)
+    lst.append(N//3)
 
 _result = 0
-if len(list) == 0:
+if len(lst) == 0:
     _result = -1
 else:
-    _result = min(list)
+    _result = min(lst)
 
 print(_result)
 
-# 다른 사람 풀이인데 이해가 안됨..
+
 # n = int(input())
 # count = 0
 #

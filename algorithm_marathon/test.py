@@ -1,13 +1,13 @@
 
 
 
-
 a = [1,2,3,4,5]
 
-b = [4,3,7]
+if a.pop() == 4:
+    print(1)
+else:
+    print(0)
 
+print(a)
 
-c = list(set(a) - set(b))
-
-print(c)
 
