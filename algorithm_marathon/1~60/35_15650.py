@@ -10,16 +10,3 @@ dict = {}
 for i in lst:
     dict[i] = lst
 
-start_node = 1
-cnt = 0
-while cnt <= N:
-    result = []
-    stack = [lst[cnt]]
-    n = stack.pop()
-    if n not in result:
-        result.append(n)
-        count = 0
-        while count < M-1:
-            count += 1
-
-    cnt += 1

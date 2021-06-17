@@ -1,16 +1,16 @@
 # 균형잡힌세상_중_스택
 
-# import sys
-# dd = sys.stdin.readline().strip()
+import sys
+dd = sys.stdin.readline().strip()
 
 
 while True:
-    dd = input()
-    if dd == '.':
+    _string = input()
+    if _string == '.':
         break
     stack = []
     check = 0
-    for i in dd:
+    for i in _string:
         if i == '(':
             stack.append(i)
         elif i == '[':
@@ -43,35 +43,31 @@ while True:
     else:
         print('yes')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# import sys
+# # sys.stdin = open('./txt/problem_28.txt', 'rt')
+# # 런타임 문제가 나긴하는데 괜찮을거 같음...
+# check_type = ['(', ')', '[', ']', '.']
+# while True:
+#     stack = []
+#     string = sys.stdin.readline()
+#     if string == '':
+#         break
+#     for i in string:
+#         if i in check_type:                  #   []
+#             stack.append(i)
+#             if len(stack) == 1:
+#                 continue
+#             if stack[-2] == '(' and stack[-1] == ')':
+#                 stack.pop()
+#                 stack.pop()
+#                 continue
+#             if stack[-2] == '[' and stack[-1] == ']':
+#                 stack.pop()
+#                 stack.pop()
+#     if len(stack) > 1:
+#         print('no')
+#     else:
+#         print('yes')
 
     # check_list = []
     # count = 0

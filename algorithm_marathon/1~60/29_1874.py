@@ -9,21 +9,43 @@ stack = []
 result_str = ''
 
 cnt = 0
-for i in range(n):
+for i in range(0,n):
     k = int(sys.stdin.readline())
-    while True:
-        cnt += 1
-        stack.append(cnt)
-        result_str += '+\n'
-        print(stack)
-        print(result_str)
-        if k in stack:
-            if k == stack.pop():
-                result_str += '-\n'
-                break
-            else:
-                print('NO')
-                exit()
+    while cnt =< k:
+        if
+            cnt += 1
+            stack.append(cnt)
+            result_str += '+\n'
+    while stack[-1] == k:
+        stack.pop()
+        result_str += '-\n'
+
+
+
+
+if len(stack) == 0:
+    print('YES')
+else:
+    print('NO')
+
+
+
+
+
+
+
+        # cnt += 1
+        # stack.append(cnt)
+        # result_str += '+\n'
+        # print(stack)
+        # print(result_str)
+        # if k in stack:
+        #     if k == stack.pop():
+        #         result_str += '-\n'
+        #         break
+        #     else:
+        #         print('NO')
+        #         exit()
 
 print(result_str.rstrip())
 
