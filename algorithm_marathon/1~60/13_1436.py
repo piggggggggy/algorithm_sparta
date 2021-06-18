@@ -11,7 +11,7 @@ while len(list) <= N:
     count += 1
 print(list[N])
 
-#### 다시 풀기 너무 오래걸림
+#### 다시 풀기            너무 오래걸림
 
 
 

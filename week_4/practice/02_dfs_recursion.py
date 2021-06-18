@@ -17,7 +17,7 @@ graph = {
 visited = []
 
 
-def dfs_recursion(adjacent _graph, cur_node, visited_array):
+def dfs_recursion(adjacent_graph, cur_node, visited_array):
     # 구현해보세요!
     visited_array.append(cur_node)
     cur_lst = adjacent_graph[cur_node]
