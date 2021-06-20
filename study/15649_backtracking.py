@@ -1,3 +1,4 @@
+# N과 M (1)
 
 import sys
 
@@ -17,7 +18,13 @@ def backtracking(depth, n, m):
             continue
         visited[i] = True # 탐사 내용 얻데이트
         out.append(i+1) # 탐사 내용 (출력용)
+        # print('i:',i)
+        # print('visit:',visited)
+        # print('out:',out)
         backtracking(depth+1, n, m) # 다음 깊이 탐색
         visited[i] = False # 탐사완료 후 빠꾸하기 위해
         out.pop() # 재귀함수 내에서 depth == m 이라는 조건을 만족하고 출력하고 나옴
+        # print('visit2:', visited)
+        # print('out2:', out)
+
 backtracking(0, N, M)
