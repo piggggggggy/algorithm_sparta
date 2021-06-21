@@ -1,25 +1,26 @@
-# N과 M (5)
+# N과 M (10)
 
 import sys
 
 N, M = map(int, sys.stdin.readline().split())
+visited = [False] * N
 lst = list(map(int, sys.stdin.readline().split()))
 lst.sort()
-visited = [False] * N
 out = []
-# lst = [1, 7, 8, 9]
 
-def five(depth, n, m):
+def ten(depth, idx, n, m):
     if depth == m:
         print(*out)
         return
 
-    for i in range(n):
-        if not visited[i]:
-            visited[i] = True
+    check = 0
+    for i in range(idx, n):
+        if not visited[i] and check != lst[i]:
             out.append(lst[i])
-            five(depth+1, n, m)
+            visited[i] = True
+            check = lst[i]
+            ten(depth+1, i+1, n, m)
             out.pop()
             visited[i] = False
 
-five(0, N, M)
+ten(0,0, N, M)

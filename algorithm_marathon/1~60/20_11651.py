@@ -7,6 +7,8 @@ for i in range(N):
     xy = list(map(int, input().split()))
     lst.append(xy)
 
+# lst.sort(key=lambda x: (x[1], x[0]))
+
 result = sorted(lst, key=lambda x: (x[1], x[0]))
 
 for j in result:

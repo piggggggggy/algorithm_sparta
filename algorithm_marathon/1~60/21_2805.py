@@ -19,4 +19,8 @@ while low_value <= high_value:
 
 print(target_height)
 
+
+
+
+
 # 꼭 다시풀어보고 이분탐색을 문제에 적용하는 법을 깨우치자

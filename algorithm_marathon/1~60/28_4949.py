@@ -10,6 +10,7 @@ while True:
         break
     stack = []
     check = 0
+
     for i in _string:
         if i == '(':
             stack.append(i)

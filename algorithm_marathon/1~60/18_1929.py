@@ -1,10 +1,8 @@
 # 소수 구하기_중하_기본수학2
 
-
 import sys
 
 M, N = map(int, sys.stdin.readline().split())
-
 
 n = 1000000
 prime_list = [True] * n
@@ -15,6 +13,7 @@ for i in range(2, m+1):
     if prime_list[i]:
         for j in range(i * 2, n, i):
             prime_list[j] = False
+
 prime_list[1] = False
 
 for k in range(M, N+1):
@@ -22,7 +21,6 @@ for k in range(M, N+1):
         print(k)
 
 
-# 예외는 1이었다...
 
 
 

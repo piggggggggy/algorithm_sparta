@@ -65,8 +65,7 @@ def stack(data):
         else:
             return print(lst[-1])
 
-
 for i in data:
     stack(i)
 
-# 백준은 sys를 사용해야 풀리는 문제가 있다...?!!
+# 백준은 sys를 사용해야 풀리는 문제가 있다

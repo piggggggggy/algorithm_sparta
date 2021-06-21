@@ -1,4 +1,4 @@
-# N과 M (5)
+# N과 M (11)
 
 import sys
 
@@ -7,19 +7,18 @@ lst = list(map(int, sys.stdin.readline().split()))
 lst.sort()
 visited = [False] * N
 out = []
-# lst = [1, 7, 8, 9]
 
-def five(depth, n, m):
+def eleven(depth, n, m):
     if depth == m:
         print(*out)
         return
 
+    check = 0
     for i in range(n):
-        if not visited[i]:
-            visited[i] = True
+        if check != lst[i]:
             out.append(lst[i])
-            five(depth+1, n, m)
+            check = lst[i]
+            eleven(depth+1, n, m)
             out.pop()
-            visited[i] = False
 
-five(0, N, M)
+eleven(0, N, M)
