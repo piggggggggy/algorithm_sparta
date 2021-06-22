@@ -12,12 +12,9 @@ def threeeee(depth, n, m):
         return
 
     for i in range(n):
-        # if not visited[i]:
         out.append(i+1)
         threeeee(depth+1, n, m)
-        # visited[i] = True
         out.pop()
-        # for j in range(i, n):
-        #     visited[j] = False
+
 
 threeeee(0, N, M)

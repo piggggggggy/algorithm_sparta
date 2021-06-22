@@ -7,9 +7,9 @@ N, M = map(int, sys.stdin.readline().split())
 data = list(map(int, sys.stdin.readline().split()))
 
 index_list = [i+1 for i in range(N)]
-
 dq = deque(index_list)
 
+#  [1,2,3,4,5,6,7,8,9,10]
 
 count = 0
 for j in data:
