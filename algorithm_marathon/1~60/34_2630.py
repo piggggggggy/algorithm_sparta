@@ -7,6 +7,14 @@ for i in range(n):
     data.append(list(map(int, sys.stdin.readline().split())))
 
 print(data)
+# [[1, 1, 0, 0, 0, 0, 1, 1],
+#  [1, 1, 0, 0, 0, 0, 1, 1],
+#  [0, 0, 0, 0, 1, 1, 0, 0],
+#  [0, 0, 0, 0, 1, 1, 0, 0],
+#  [1, 0, 0, 0, 1, 1, 1, 1],
+#  [0, 1, 0, 0, 1, 1, 1, 1],
+#  [0, 0, 1, 1, 1, 1, 1, 1],
+#  [0, 0, 1, 1, 1, 1, 1, 1]]
 
 
 one_count = 0
@@ -15,9 +23,11 @@ zero_count = 0
 def cut_paper(N, graph_list):
     global one_count, zero_count
     sum_cnt = 0
+
     for i in range(int(N)):
         cell = graph_list[i]
         sum_cnt += sum(cell)
+
     if sum_cnt == N**2:
         one_count += 1
         return

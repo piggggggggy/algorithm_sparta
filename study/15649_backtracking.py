@@ -3,7 +3,7 @@
 import sys
 
 N, M = map(int, sys.stdin.readline().split())
-
+# 4 2
 visited = [False] * N
 out = []
 
@@ -12,15 +12,15 @@ def backtracking(depth, n, m):
         print(*out)
         return
 
-    for i in range(N): # check 하면서 탐사
-        if visited[i]: # visited가 False이면, 즉, 탐사 안했다면
+    for i in range(N)    i = 1, depth = 1, [ftff], out = [2]
+        if visited[i]:
             continue
-        visited[i] = True # 탐사 내용 얻데이트
-        out.append(i+1) # 탐사 내용 (출력용)
+        visited[i] = True
+        out.append(i+1)
 
-        backtracking(depth+1, n, m) # 다음 깊이 탐색
-        visited[i] = False # 탐사완료 후 빠꾸하기 위해
-        out.pop() # 재귀함수 내에서 depth == m 이라는 조건을 만족하고 출력하고 나옴
+        backtracking(depth+1, n, m)
+        visited[i] = False
+        out.pop()
 
 
 backtracking(0, N, M)
