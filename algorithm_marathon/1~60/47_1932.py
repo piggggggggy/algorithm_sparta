@@ -31,7 +31,7 @@ lst = [list(map(int, sys.stdin.readline().split())) for i in range(N)]
 
 # out = 7
 # result = 0
-# 
+#
 # def pyramid(depth, n, k):
 #     global result
 #     global out
@@ -48,3 +48,11 @@ lst = [list(map(int, sys.stdin.readline().split())) for i in range(N)]
 # pyramid(1, N, 0)
 #
 # print(result)
+
+# try3
+
+
+idx = 0
+for i in range(n):
+
+
