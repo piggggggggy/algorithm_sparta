@@ -6,7 +6,7 @@ class MaxHeap:
         self.items.append(value)
         cur_index = len(self.items) - 1
 
-        while cur_index > 1:  # cur_index 가 1이 되면 정상을 찍은거라 다른 것과 비교 안하셔도 됩니다!
+        while cur_index > 1:
             parent_index = cur_index // 2
             if self.items[parent_index] < self.items[cur_index]:
                 self.items[parent_index], self.items[cur_index] = self.items[cur_index], self.items[parent_index]
@@ -15,7 +15,6 @@ class MaxHeap:
                 break
 
     def delete(self):
-        # 구현해보세요!
         n = len(self.items)-1
         del_node = self.items[1]
         if n > 2:
@@ -42,7 +41,6 @@ max_heap.insert(2)
 max_heap.insert(5)
 max_heap.insert(4)
 print(max_heap.items)  # [None, 8, 6, 7, 2, 5, 4]
-print(max_heap.delete())  # 8 을 반환해야 합니다!
+print(max_heap.delete())  # 8
 print(max_heap.items)  # [None, 7, 6, 4, 2, 5]
-print(max_heap.delete())
-print(max_heap.items)
+
